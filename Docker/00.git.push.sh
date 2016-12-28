@@ -2,7 +2,7 @@
 
 
 echo `dirname $0`
-git pull origin
+git pull
 git add *
 git commit -m "docker follow sample"
 git push
