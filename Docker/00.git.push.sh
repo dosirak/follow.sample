@@ -1,8 +1,11 @@
 #!/bin/sh
 
+cd `dirname $0`
 
-echo `dirname $0`
+COMMIT_MSG="Docker follow sample"
+#read COMMIT_MSG
+
 git pull
 git add *
-git commit -m "docker follow sample"
+git commit -m "${COMMIT_MSG}"
 git push

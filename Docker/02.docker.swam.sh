@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. ./00.env.sh
+
 docker swarm init
 docker pull olavgg/moinmoin-wiki
 docker network create -d overlay mm_overlay_nw
