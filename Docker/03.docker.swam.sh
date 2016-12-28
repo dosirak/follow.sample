@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ./00.env.sh
+source `dirname $0`/00.env.sh
 
 docker swarm init
 docker pull olavgg/moinmoin-wiki
